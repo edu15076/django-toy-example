@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <h1>Salvar Cor do Olho </h1>
+
+  <form method="post">
+    <nav>
+      <input value="Listar" type="submit" formaction="{% url "salvar_olho" "home" %}">
+      <input value="Dados" type="submit"  formaction="{% url "salvar_olho" "editar_dados" %}">
+      <input value="Cor do Olho" type="submit" formaction="{% url "salvar_olho" "cor_do_olho" %}">
+  </nav>
+    {% csrf_token %}
+    
+    {{form}}
+
+    <input type="hidden" value="{{ person.id }}" name="person_id">
+    <input value="Salvar e Listar Pessoas" type="submit" formaction="{% url "salvar_olho" "home" %}"> 
+  </form>
+
+{% endblock %}
