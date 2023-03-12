@@ -1,15 +1,5 @@
-[Uso do GIT](docs/git.md)
-- Comandos básicos
-- Início de uma nova funcionalidade
-- Fazendo merge no master
-- Resolvendo conflitos
-
-[Organização dos arquivos e ambiente](docs/organizacao_ambiente.md)
-- Ambiente Virtual
-- Estrutura de Diretórios
-- GitIgnore
-
 [Django Models](docs/django_models.md)
+<br>Testes no jupyter, pessoas criadas no migrations 0005 e método de pegar quantidade de pessoas com cada cor do olho no PersonManager
 - Boas práticas *
 - Organização dos models 
 - Criação dos dados iniciais
